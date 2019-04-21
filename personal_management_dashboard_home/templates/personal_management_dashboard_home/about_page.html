@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" >
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- Animate CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" crossorigin="anonymous">
+        <link href="{% static 'css/test_automation_dashboard.css'%}" rel="stylesheet" type="text/css"/>
+        <title>
+            About Dashboard
+        </title>
+
+    </head>
+
+    <header>
+        <div class="headerbar">
+            <div class="headerbar-left">
+            </div>
+            <nav class="navbar-custom">
+            </nav>
+        </div>
+    </header>
+
+    <body>
+        <div class="left main-sidebar">
+              <div class="sidebar-inner leftscroll">
+                 <div id="sidebar-menu">
+                    <ul>
+                       <li class="submenu">
+                            <a  href="{% url 'personal_management_dashboard_home:personal_management_dashboard_home' %}">Personal Management Dashboard</a>
+                       </li>
+                        <li class="submenu">
+                            <a class="active" href="{% url 'personal_management_dashboard_home:about_page' %}">About Dashboard</a>
+                       </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                 </div>
+                 <div class="clearfix"></div>
+              </div>
+        </div>
+        <div class="content-page">
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-12" >
+                            <div class="breadcrumb-holder">
+                                 <h1 class="main-title float-left h1">About The Dashboard</h1>
+                                    &nbsp;
+                                <div class="clearfix">&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Personal Management Dashboard.</h2>
+                        <h5>Dashboard aimed at providing a visualisation for individual users to track their tasks, events and budgeting. Created for the purpose of 'Seeing Home- Wayfair Dashboard Development Competition'.</h5>
+                        <h5>Created by : <u><a href="https://github.com/sankarshvittal" target="_blank">Sankarsh Vittal Yerragunta</a></u></h5>
+                        <h6>Let's get in touch : sv6265@rit.edu</a></h6>
+                    </div>
+                </div>
+            </div>
+      </div>
+
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!-- Highcharts JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <!-- Fontawesome JavaScript -->
+        <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    </body>
+    <footer class="footer">
+        <span class="text-center">
+            <strong><i class="far fa-copyright"></i> Designed By <a href="https://github.com/sankarshvittal" target="_blank">Sankarsh Vittal</a>.</strong>
+        </span>
+    </footer>
+</html>
+

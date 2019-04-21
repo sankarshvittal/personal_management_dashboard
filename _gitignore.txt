@@ -1,0 +1,28 @@
+# Ignore generated directories (Linux)
+/__pycache__**
+/.idea**
+
+# Ignore generated directories (Windows)
+\__pycache__**
+\.idea**
+
+
+# Ignore python code coverage files (Windows)
+\htmlcov**
+*.coverage
+
+
+# Ignore python code coverage files (Linux)
+/htmlcov**
+*.coverage
+
+#SQLite3 files
+*.sqlite3
+
+# Migrations folders (Windows)
+**\migrations\**
+!**\migrations\__init__.py
+
+# Migrations folders (Linux)
+**/migrations/**
+!**/migrations/__init__.py

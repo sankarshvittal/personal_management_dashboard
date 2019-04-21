@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" >
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- Animate CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" crossorigin="anonymous">
+        <!-- Fontawesome CSS -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <!-- Datatables -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.18/datatables.min.css"/>
+        <link href="{% static 'css/test_automation_dashboard.css'%}" rel="stylesheet" type="text/css"/>
+        <title>
+            Personal Management Dashboard
+        </title>
+    </head>
+    <header>
+            <div class="headerbar">
+                <div class="headerbar-left">
+                </div>
+                <nav class="navbar-custom">
+                </nav>
+            </div>
+    </header>
+    <body>
+        <div class="left main-sidebar">
+              <div class="sidebar-inner leftscroll">
+                 <div id="sidebar-menu">
+                    <ul>
+                       <li class="submenu">
+                          <a class="active" href="{% url 'personal_management_dashboard_home:personal_management_dashboard_home' %}">Personal Management Dashboard</a>
+                       </li>
+                        <li class="submenu">
+                            <a href="{% url 'personal_management_dashboard_home:about_page' %}">About Dashboard</a>
+                       </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                 </div>
+                 <div class="clearfix"></div>
+              </div>
+        </div>
+
+      <div class="content-page">
+        <div class="content">
+             <div class="container-fluid">
+
+                <div class="row">
+                   <div class="col-xl-12" >
+                      <div class="breadcrumb-holder">
+                         <h1 class="main-title float-left h1">Personal Management Dashboard</h1>
+                         &nbsp;
+                         <div class="clearfix">&nbsp;</div>
+                      </div>
+                   </div>
+                </div>
+              <div class="row animated bounceInLeft">
+               <div class="col-xs-12 col-md-6 col-lg-6 col-xl-3">
+                  <div class="card-box noradius noborder bg-default">
+                     <i class="fas fa-tasks float-right text-white"></i>
+                     <h6 class="text-white m-b-20 h5">TOTAL NUMBER OF TASKS</h6>
+                     <h1 class="m-b-20 text-white counter">8</h1>
+                     &nbsp;
+                  </div>
+               </div>
+               <div class="col-xs-12 col-md-6 col-lg-6 col-xl-3">
+                  <div class="card-box noradius noborder bg-warning">
+                     <i class="fas fa-sort-amount-up float-right text-white"></i>
+                     <h6 class="text-white text-uppercase m-b-20 h5">COMPLETED TASKS</h6>
+                     <h1 class="m-b-20 text-white counter">2</h1>
+                    &nbsp;
+                  </div>
+               </div>
+               <div class="col-xs-12 col-md-6 col-lg-6 col-xl-3">
+                  <div class="card-box noradius noborder bg-danger">
+                     <i class="fas fa-sort-amount-down  float-right text-white"></i>
+                     <h6 class="text-white text-uppercase m-b-20 h5">INCOMPLETE TASKS</h6>
+                     <h1 class="m-b-20 text-white counter">6</h1>
+                     &nbsp;
+                  </div>
+               </div>
+                  <a target="_blank" href="https://www.booked.net/weather/billerica-9544"><img src="https://w.bookcdn.com/weather/picture/3_9544_1_1_137AE9_389_ffffff_333333_08488D_1_ffffff_333333_0_6.png?scode=2&domid=w209&anc_id=54670"  alt="booked.net"/></a>
+             </div>
+
+             <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-3">
+                        <div class="card mb-3">
+                            <div class="card-header">
+                                <h3><i class="fas fa-tasks"></i> Tasks progress</h3>
+                                Provides a detailed list of tasks along with progress of each of them.
+                            </div>
+                            <div class="card-body">
+                                    <p class="font-600 m-b-5">Task 1: Design Wayfair Dashboard <span class="text-primary pull-right"><b>100%</b></span></p>
+                                    <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-xs bg-primary" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="m-b-20"></div>
+                                    <p class="font-600 m-b-5">Task 2: Complete College Project <span class="text-primary pull-right"><b>88%</b></span></p>
+                                    <div class="progress">
+                                     <div class="progress-bar progress-bar-striped progress-xs bg-info" role="progressbar" style="width: 88%" aria-valuenow="88" aria-valuemin="0" aria-valuemax="88"></div>
+                                 </div>
+                                 <div class="m-b-20"></div>
+                                     <p class="font-600 m-b-5">Task 3: Code Wayfair Dashboard <span class="text-info pull-right"><b>100%</b></span></p>
+                                     <div class="progress">
+                                     <div class="progress-bar progress-bar-striped progress-xs bg-primary" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+								<div class="m-b-20"></div>
+									<p class="font-600 m-b-5">Task 4: Paint the Living Room Walls <span class="text-info pull-right"><b>70%</b></span></p>
+                                    <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-xs bg-info" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="70"></div>
+                                 </div>
+                                <div class="m-b-20"></div>
+                                    <p class="font-600 m-b-5">Task 5: Repair the bicycle <span class="text-warning pull-right"><b>68%</b></span></p>
+                                    <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-xs bg-warning" role="progressbar" style="width: 68%" aria-valuenow="68" aria-valuemin="0" aria-valuemax="68"></div>
+                                </div>
+                                <div class="m-b-20"></div>
+                                    <p class="font-600 m-b-5">Task 6: Polish the wooden dining table <span class="text-warning pull-right"><b>65%</b></span></p>
+                                    <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-xs bg-warning" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="65"></div>
+                                 </div>
+                                <div class="m-b-20"></div>
+                                    <p class="font-600 m-b-5">Task 7: Complete my income tax application <span class="text-danger pull-right"><b>55%</b></span></p>
+                                    <div class="progress">
+                                     <div class="progress-bar progress-bar-striped progress-xs bg-danger" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="55"></div>
+                                 </div>
+                                <div class="m-b-20"></div>
+                                    <p class="font-600 m-b-5">Task 8: Clean the garden  <span class="text-danger pull-right"><b>40%</b></span></p>
+                                    <div class="progress">
+                                     <div class="progress-bar progress-bar-striped progress-xs bg-danger" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="40"></div>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                        <div class="card mb-3">
+                            <div class="card-header">
+                                <h3><i class="fas fa-chart-pie"></i> Budgeting Analytics</h3>
+                                 Pi-chart gives a distribution between spending and income.
+                            </div>
+                            <div id="vm_teams_distribution" style="height: 400px"></div>
+                        </div>
+                     </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                        <div class="card mb-3">
+                            <div class="card-header">
+                                    <h3><i class="fas fa-candy-cane"></i> USA Federal Holiday's List 2019</h3>
+                                    The holidays list helps towards planning out the tasks and the overall planning
+                            </div>
+                                <table id="ant_vmware_vm_availability_table" class="table table-bordered table-responsive-xl table-hover display table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">HOLIDAY DATE</th>
+                                            <th class="text-center">HOLIDAY REASON</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                                <div id='loader' align="center">
+                                    <img src="{% static 'img/loader.gif'%}" width='62px' height='62px'> loading...
+                                </div>
+                        </div>
+                    </div>
+
+                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 ">
+                         <div class="card mb-3" style ="width: 430px">
+                             <div class="card-header">
+								    <h3><i class="far fa-calendar-alt"></i> Calender Events</h3>
+                                    Click on a particular date to check events
+                             </div>
+                             <div>
+                                 <div id="calendar"></div>
+                             </div>
+                             </div>
+                         </div>
+                    </div>
+             </div>
+        </div>
+      </div>
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!-- Highcharts JavaScript -->
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
+        <!-- Datatables JavaScript -->
+        <script type="text/javascript" src="https://cdn.datatables.net/v/bs4-4.1.1/jq-3.3.1/dt-1.10.18/datatables.min.js"></script>
+        <script src="{% static 'js/calender_budgeting.js'%}"></script>
+
+        <script>
+        var pieColors = (function () {
+            var colors = [],
+                base = Highcharts.getOptions().colors[0],
+                i;
+            for (i = 0; i < 10; i += 1) {
+                // Start out with a darkened base color (negative brighten), and end
+                // up with a much brighter color
+                colors.push(Highcharts.Color(base).brighten((i - 3) / 7).get());
+            }
+            return colors;
+        }());
+
+        // Build the chart
+        Highcharts.chart('vm_teams_distribution', {
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            title: {
+                text: ''
+            },
+
+            tooltip: {
+                pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y} %</b> of  <b>100 %</b><br/>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    colors: pieColors,
+                    size: '70%',
+                    dataLabels: {
+                        enabled: true,
+                        format: '<b>{point.name}</b><br>{point.y}% ',
+                        distance: -50,
+                        filter: {
+                            property: 'percentage',
+                            operator: '>',
+                            value: 4
+                        }
+                    }
+                }
+            },
+            "series": [{
+                "name": "VM Count",
+                "colorByPoint": true,
+                "data": [{
+                        "name": "Income",
+                        "y": 60,
+                    },
+                    {
+                        "name": "Spending",
+                        "y": 40,
+                    }]
+            }],
+        });
+
+
+        $(document).ready(function () {
+            let self = $.ajax({
+                url: '{% url 'personal_management_dashboard_home:holiday_details' %}',
+                method: 'post',
+                datatype: 'json',
+                contentType: "application/json",
+                success: function (data) {
+                    console.log(data);
+                    $('#ant_vmware_vm_availability_table').dataTable({
+                        dom: 'lrtip',
+                        "bLengthChange": false,
+                        "ordering": false,
+                        data: data,
+                        "columns": [{
+                            'data': 'holiday'
+                        },
+                            {
+                                'data': 'holiday_reason'
+                            },
+                        ],
+                    });
+                },
+                complete: function (data) {
+                    // Hide image container
+                    $("#loader").hide();
+                    $("#ant_vmware_vm_availability_table td").addClass("text-center");
+                    $("#ant_vmware_vm_availability_table td").removeClass("sorting_1");
+                    $("#ant_vmware_vm_availability_table").removeAttr("style");
+                },
+                error: function (xhr, ajaxOptions, thrownError) {
+                    console.log(xhr.responseText);
+                }
+            });
+        });
+    </script>
+    </body>
+    <footer class="footer">
+        <span class="text-center">
+            <strong><i class="far fa-copyright"></i> Designed By <a href="https://github.com/sankarshvittal" target="_blank">Sankarsh Vittal</a>.</strong>
+        </span>
+    </footer>
+</html>
+
